@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  livechat:
+    container_name: livechat
+    hostname: livechat
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    
